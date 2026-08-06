@@ -1,0 +1,40 @@
+<!--
+  Template AGENTS.md for Devin (and other AGENTS.md-compatible tools).
+  See README.md in this folder for what is and isn't verified about how
+  Devin actually uses this file.
+
+  Delete this comment block once you've filled in the sections below.
+-->
+
+# [PROJECT_NAME]
+
+## Critical rules
+
+The rules below caused, or nearly caused, a real incident in this project.
+Full detail: `SCIENTIFIC_PROTOCOL.md`.
+
+1. **[Your highest-cost failure mode].** [What to do instead, and why.]
+2. **[Second rule, if you have one].** [Same structure.]
+3. **Before claiming "X is confirmed" or "X is in production," verify the
+   real system state** — a git push, a passing test, or a code comment is
+   not confirmation.
+
+## What this project does
+
+[Short description.]
+
+## Build / test / run
+
+[Exact commands — this is the part AGENTS.md is most commonly used for.]
+
+## Method
+
+This project follows the scientific method in
+`method/SCIENTIFIC_METHOD.md` and the enforcement model in
+`method/ENFORCEMENT_MODEL.md` (adjust paths to wherever you vendor this
+repo's `method/` folder). The running protocol for this project is in
+`SCIENTIFIC_PROTOCOL.md`, based on `method/PROJECT_PROTOCOL_TEMPLATE.md`.
+
+Before scaling any action beyond a 3-5 case pilot, confirm Phase 2 passed
+100% and get explicit approval — see `SCIENTIFIC_METHOD.md` for the full
+phase structure.

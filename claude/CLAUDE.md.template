@@ -1,0 +1,42 @@
+<!--
+  Template for the top of your project's CLAUDE.md.
+
+  Why inline instead of a link: a "read this first" link depends on the
+  agent choosing to open it. Inline text in CLAUDE.md is loaded every
+  session automatically, before the agent decides anything. Put the rules
+  that would actually cause damage if skipped here, directly — not just a
+  pointer to a file that describes them. Keep it to the handful of rules
+  that caused (or nearly caused) a real incident; a long list defeats the
+  purpose, because it stops being read carefully.
+
+  Delete this comment block once you've filled in the sections below.
+-->
+
+# [PROJECT_NAME]
+
+⚠️ **CRITICAL RULES — inline on purpose, not behind a link.**
+A link depends on someone choosing to open it. The rules below caused (or
+nearly caused) a real incident — see `SCIENTIFIC_PROTOCOL.md` for detail.
+
+1. **[Your highest-cost failure mode].** [One or two sentences: what to do
+   instead, and why — cite the incident it prevents if there is one.]
+2. **[Second rule, if you have one].** [Same structure.]
+3. **Before claiming "X is confirmed" or "X is in production," verify the
+   real system state** (the actual deploy, the actual database) — a
+   git push, a passing test, or a code comment is not confirmation.
+4. Full detail and the reasoning behind each rule:
+   [SCIENTIFIC_PROTOCOL.md](SCIENTIFIC_PROTOCOL.md).
+
+## What this project does
+
+[Short description.]
+
+## Method
+
+This project follows the scientific method described in
+[`../method/SCIENTIFIC_METHOD.md`](../method/SCIENTIFIC_METHOD.md) and the
+enforcement model in
+[`../method/ENFORCEMENT_MODEL.md`](../method/ENFORCEMENT_MODEL.md). The
+running protocol for this specific project lives in
+`SCIENTIFIC_PROTOCOL.md`, copied from
+[`../method/PROJECT_PROTOCOL_TEMPLATE.md`](../method/PROJECT_PROTOCOL_TEMPLATE.md).
