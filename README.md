@@ -21,8 +21,10 @@ method/    The method itself — tool-agnostic. Start here.
 claude/    Implementation for Claude Code: an inline-rules template
            and a global hook that force-injects the method into every
            session, on every project, on a given machine.
-devin/     Implementation for Devin, via the AGENTS.md standard.
-           Read the honesty note in devin/README.md before trusting it.
+devin/     Implementation for Devin: a global SessionStart hook and
+           per-project always-on rules, both confirmed against a real
+           Devin CLI session — see devin/README.md for what was tested
+           and what (AGENTS.md) is still documentation-only.
 ```
 
 ## Start here

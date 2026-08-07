@@ -27,8 +27,10 @@ Instead of a link someone may or may not open, a mechanism that loads the
 rule automatically, before any action is taken, independent of anyone's
 choice. For an AI coding agent this typically means a session-start hook
 that injects the relevant documents directly into the agent's context — see
-[`../claude/`](../claude/) for a working implementation, and
-[`../devin/`](../devin/) for the equivalent using a portable standard.
+[`../claude/`](../claude/) and [`../devin/`](../devin/) for two independent,
+empirically-tested implementations (not just documentation-based guesses —
+each was confirmed by running a real prompt and checking the content
+actually arrived).
 
 This layer is worth building, and it is verifiable: you can simulate the
 startup event and confirm the content actually arrives, across repeated
